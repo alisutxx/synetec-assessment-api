@@ -1,3 +1,22 @@
+# Alice:
+Hello and thank you for taking your time to review my solution to the assessment!
+
+I decided to use the CQRS pattern for this. I created only one controller for everything that is employee related and decided to continue with the Bonus Pool Service, but changed the methods inside of it (two methods to calculate the bonus pool percentage and the bonus amount).
+
+I created a BaseController class with a generic method that could be used in every controller to handle the endpoints response.
+For Read requests, I created a class called EmployeeQueries where I would process the requests received in the API endpoints. 
+
+
+For testing, I decided to use XUnit and created another project where I mocked the database and made the two unit test class derive from IDisposable in order to implement the same setup for all the methods.
+
+I used AutoMapper to map db entities to other Dtos I have made.
+
+I tried to respect the SOLID principles and some principles of object calisthenics.
+
+I am eager to learn more and I am enthusiastic about what the future will bring.
+
+Thank you!
+
 # Synetec Basic .Net API assessement
 
 This is Synetec's basic API developer assessment.
