@@ -9,7 +9,7 @@ namespace SynetecAssessment.Api.Controllers
 		/// handles the response in API endpoint methods
 		/// </summary>
 		/// <typeparam name="T">Any class that derives from BaseResponseDto</typeparam>
-		/// <param name="responseData">the result of the request proccessed in the endpoint</param>
+		/// <param name="responseData">the result of the request processed in the endpoint</param>
 		/// <returns>
 		/// OK - when responseData.IsError == false (request is successful)
 		/// BAD REQUEST - when responseData.IsError == true (request is not successful, either from an error that has occured or conditions were not met)
