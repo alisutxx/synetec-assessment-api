@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SynetecAssessmentApi.Domain;
+using SynetecAssessment.Domain;
 using System.Reflection;
 
-namespace SynetecAssessmentApi.Persistence
+namespace SynetecAssessment.Persistence
 {
     public class AppDbContext : DbContext
     {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SynetecAssessmentApi.Domain;
+using SynetecAssessment.Domain;
 
-namespace SynetecAssessmentApi.Persistence.EntityConfiguration
+namespace SynetecAssessment.Persistence.EntityConfiguration
 {
     public class EmployeeConfiguration : IEntityTypeConfiguration<Employee>
     {

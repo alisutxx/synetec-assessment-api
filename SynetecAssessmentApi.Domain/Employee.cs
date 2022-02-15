@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace SynetecAssessmentApi.Domain
+﻿namespace SynetecAssessment.Domain
 {
-    public class Employee : Entity
+	public class Employee : Entity
     {
         public string Fullname { get; set; }
         public string JobTitle { get; set; }
@@ -17,7 +15,6 @@ namespace SynetecAssessmentApi.Domain
             int salary,
             int departmentId) :base(id)
         {
-            Id = id;
             Fullname = fullname;
             JobTitle = jobTitle;
             Salary = salary;

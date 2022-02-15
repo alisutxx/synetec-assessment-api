@@ -1,6 +1,6 @@
-﻿namespace SynetecAssessmentApi.Dtos
+﻿namespace SynetecAssessment.Api.Dtos
 {
-    public class EmployeeDto
+    public class EmployeeDto : BaseResponseDto
     {
         public string Fullname { get; set; }
         public string JobTitle { get; set; }
