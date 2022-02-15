@@ -13,6 +13,8 @@ I used AutoMapper to map db entities to other Dtos I have made.
 
 I tried to respect the SOLID principles and some principles of object calisthenics.
 
+One thing that I found difficult was configuring the unit testing, mainly because I don't have much experience with this. I knew about the OneTimeSetUp attribute from NUnit but I didn't know at first how to create a common setup for all the tests, so I decided to derive the classes from IDisposable as I said earlier. I needed this fix because at first, in every test method I was adding data to the db and I didn't like the idea, so I created the mockup of the DbContext and seeded it in the constructor. The problem appeared when I had multiple test methods in the same class, because everytime a test ran, the MockDbContext constructor was called and it tried to seed the db again with the same values. So inheriting the IDisposable was useful because I could clean the database in the void Dispose().
+
 I am eager to learn more and I am enthusiastic about what the future will bring.
 
 Thank you!
